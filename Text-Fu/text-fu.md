@@ -218,9 +218,11 @@
 
 ### 2. Vim (Vi Improved)
 
-#### a. Khởi động
+#### a. Khởi động và thoát
 
-*vim*
+- *vim* khởi động chế độ vim
+
+- **:qa** thoát chế độ vim
 
 #### b. Vim Search Patterns
 
@@ -247,3 +249,29 @@ Bình thường vim sẽ ở chế độ lệnh, tức là không thể sửa v�
 - *A* nối vào cuối dòng
 
 Để thoát chế độ chèn, nhấn phím Esc
+
+#### e. Vim Editing
+
+- **x** dùng để cắt đoạn văn bản hoặc xóa các kí tự
+
+- **dd** xóa dòng hiện tại
+
+- **y** kéo hoặc sao chép bất cứ thứ gì được chọn
+
+- **yy** kéo hoặc sao chép dòng hiện tại
+
+- **p** dán phần văn bản được sao chép trước con trỏ
+
+#### f. Vim Saving and Exiting
+
+- **:w** viết hoặc lưu file
+
+- **:q** thoát chế độ vim
+
+- **:wq** hoặc **ZZ** ghi và thoát
+
+- **:q!** thoát vim mà không lưu file
+
+- **u** undo
+
+- **Ctrl+r** redo
