@@ -20,7 +20,7 @@
 
 - Lệnh này sẽ thay thế người dùng và mở root shell nếu như không có username nào được chỉ định. Có thể sử dụng lệnh này để thay thế bất kì người dùng nào miễn là bạn biết mật khẩu
 
-  ![su](picture\su.png)
+  ![su](picture/su.png)
 
 - tệp /etc/sudoers liệt kê các user có thể dùng sudo, có thể chỉnh sửa tệp này bằng cách sử dụng lệnh **visudo**
 
@@ -28,7 +28,7 @@
 
 - Để biết người dùng được ánh xạ tới ID nào, hãy xem tệp etc/passwd
 
-  ![passwd](picture\passwd.png)
+  ![passwd](picture/passwd.png)
 
 - Các thành phần trong thông tin người dùng (từ trái sang phải, được ngăn cách bởi dấu hai chấm)
 
@@ -56,7 +56,7 @@
 
 - /etc/shadow dùng để lưu trữ thông tin xác thực người dùng. Nó yêu cầu quyền superuser.
 
-    ![shadow](picture\shadow.png)
+    ![shadow](picture/shadow.png)
 
 - Các trường từ trái sang phải
 
@@ -82,7 +82,7 @@
 
 - lữu trữ thông tin các group với các quyền khác nhau
 
-  ![group](picture\group.png)
+  ![group](picture/group.png)
 
 - Các trường (từ trái sang phải)
 
@@ -98,11 +98,11 @@
 
 - Tạo user:
 
-  ![useradd](picture\useradd.png)
+  ![useradd](picture/useradd.png)
 
 - Đổi mật khẩu cho người dùng:
 
-  ![changepass](picture\changepass.png)
+  ![changepass](picture/changepass.png)
 
 - Xóa user:    ``` sudo userdel username ```
 
@@ -110,7 +110,7 @@
 
 ### 1. File permission
 
-![ls-l](picture\ls-l.png)
+![ls-l](picture/ls-l.png)
 
 Gồm 4 phần
 
@@ -142,13 +142,13 @@ Gồm 4 phần
 
 - Cách 1: Cấu trúc sẽ là *chmod [ugo] [+-] [filename]*
 
-  ![chmod1](picture\chmod1.png)
+  ![chmod1](picture/chmod1.png)
 
 - Cách 2: Sử dụng các số để cáp quyền, trường hợp này sẽ không cân chọn đối tượng, mà mỗi số sẽ tương ứng với 1 đối tượng.
 
   Trong mỗi nhóm đối tượng có 3 bit quyền, coi rằng 0 là không có quyền, 1 là có quyền. Vậy các số nhị phân từ 000 -111 sẽ biểu diễn được hết các trường hợp cấp quyền cho một đối tượng. Sau đó, ta đôi số nhị phân đó về dạng thập phân, như vậy sẽ nhận được số đại diện cho các quyền của một đối tượng
 
-  ![chmod2](picture\chmod2.png)
+  ![chmod2](picture/chmod2.png)
 
 ### 3. Ownership Permissions
 
@@ -189,3 +189,9 @@ Gồm 4 phần
   - sudo chmod g+s myfile
 
   - sudo chmod 2555 myfile
+
+## References
+
+<https://linuxjourney.com/lesson/users-and-groups>
+
+<https://linuxjourney.com/lesson/file-permissions>
