@@ -10,11 +10,11 @@
 
 - VD ```echo text > file``` ghi đoạn *text* vào *file*. Nếu trong file đã có dữ liệu thì sẽ ghi đè (có thể dùng flag để ngăn chặn ghi đè). Nếu file chưa tồn tại thì sẽ tự tạo mới
 
-![stdout](picture\stdout.png)
+![stdout](picture/stdout.png)
 
 > Nếu sử dụng thêm một dấu > sẽ giúp ghi đoạn text tiếp nối vào cuối của file
 
-![stdout2](picture\stdout2.png)
+![stdout2](picture/stdout2.png)
 
 ### 2. stdin (Standard In)
 
@@ -24,7 +24,7 @@
 
 - VD ```cat < file1 > file2``` file1 trở thành stdin, file2 trở thành stdout, output của cat file1 trở thành input của files2, tức là lệnh này sẽ đọc nội dung của file1 sau đó ghi vào file2
 
-![stdin](picture\stdin.png)
+![stdin](picture/stdin.png)
 
 ### 3. stderr (Standard Error)
 
@@ -34,7 +34,7 @@
 
 - VD ```ls /fake/dir 2> coconut.txt```
 
-  ![stderr](picture\stderr.png)
+  ![stderr](picture/stderr.png)
 
 > Nếu muốn thấy cả stderr và stdout trong file, có thể sử dụng 2>&1 hoặc &>.
 >
@@ -48,17 +48,17 @@
 
   VD: ```ls -la /etc | less``` lệnh này lấy kết quả của ls -la /etc sau đó đẩy vào lệnh less.
 
-  ![pipe](picture\pipe.png)
+  ![pipe](picture/pipe.png)
 
 - **tee** có thể kết hợp với **|** để viết output vào nhiều luồng
 
-  ![tee](picture\tee.png)
+  ![tee](picture/tee.png)
 
 ### 5. env (Environment)
 
 **env** đưa ra tất cả thông tin biến môi trường hiện tại đã đặt
 
-![env](picture\env.png)
+![env](picture/env.png)
 
 > có thể hiển thị riêng biến môi trường mà bạn muốn.
 >
@@ -74,15 +74,15 @@
 
   - -c theo mỗi dòng
 
-  ![cut1](picture\cut1.png)
+  ![cut1](picture/cut1.png)
 
   - -f theo trường, mặc định thì dấu Tab được coi là dấu phân cách (delimiter)
 
-  ![cut2](picture\cut2.png)
+  ![cut2](picture/cut2.png)
 
   - -d định nghĩa một delimiter mới
 
-  ![cut3](picture\cut3.png)
+  ![cut3](picture/cut3.png)
 
 ### 7. paste
 
@@ -92,11 +92,11 @@
 
 > Các dòng trong file không thay đổi
 
-![paste1](picture\paste1.png)
+![paste1](picture/paste1.png)
 
 > - Nếu muốn thay đổi dấu phân cách mặc định, có thể dùng cờ -d
 >
->   ![paste2](picture\paste2.png)
+>   ![paste2](picture/paste2.png)
 >
 > - Có thể dùng paste với nhiều file, kết quả tương tự như trường hợp chỉ một file
 
@@ -104,11 +104,11 @@
 
 - **head** hiển thị một số dòng đầu của file, mặc định là 10
 
-  ![head](picture\head.png)
+  ![head](picture/head.png)
 
 - **tail** hiển thị một số dòng cuối file, mặc định là 10
 
-  ![tail](picture\tail.png)
+  ![tail](picture/tail.png)
 
 >Có thể thay đổi số dòng muốn hiển thị với cờ -n. VD ```head -n 15 Dockerfile```
 
@@ -116,7 +116,7 @@
 
 - **expand** biến đổi dấu tab trong file thành một vài dấu cách
 
-  ![expand](picture\expand.png)
+  ![expand](picture/expand.png)
 
 - **unexpand** ngược với expand, lệnh này biến đổi một nhóm các dấu cách về dấu tab
 
@@ -126,11 +126,11 @@
 
   - Mặc định gộp bằng trường đầu tiên
 
-    ![join1](picture\join1.png)
+    ![join1](picture/join1.png)
 
   - Chỉ định trường gộp
 
-    ![join2](picture\join2.png)
+    ![join2](picture/join2.png)
 
 - **split** lệnh này sẽ tự động tách file ra các file khác khi nó đạt đến 1000 dòng, tên file ngầm định sẽ là x**
 
@@ -140,17 +140,17 @@
 
 - mặc định: sắp xếp bằng cách so sánh các kí tự từ trái qua phải theo acsii
 
-  ![sort1](picture\sort1.png)
+  ![sort1](picture/sort1.png)
 
 - dùng cờ -r để đảo ngược
 
-  ![sort2](picture\sort2.png)
+  ![sort2](picture/sort2.png)
 
 ### 12. tr (Translate)
 
 **tr** chuyển đổi một chuỗi kí tự từ tập kí tự này sang tập kí tự khác
 
-![tr](picture\tr.png)
+![tr](picture/tr.png)
 
 ### 13. uniq (Unique)
 
@@ -158,19 +158,19 @@
 
 - VD:
 
-  ![uniq1](picture\uniq1.png)
+  ![uniq1](picture/uniq1.png)
 
   - Loại bỏ các dòng bị lặp lại
 
-    ![uniq2](picture\uniq2.png)
+    ![uniq2](picture/uniq2.png)
   
   - Đếm tần xuất của các dòng
 
-    ![uniq3](picture\uniq3.png)
+    ![uniq3](picture/uniq3.png)
 
   - Lấy các dòng mà chỉ xuất hiện một lần
 
-    ![uniq4](picture\uniq4.png)
+    ![uniq4](picture/uniq4.png)
 
 > Lưu ý, *uniq* chỉ hoạt động khi các từ lặp lại (nếu có) đứng sát nhau. Vì vậy trong trường hợp chúng không đứng sát nhau, cần sử dụng kết hợp với *sort*. VD  ```sort reading.txt | uniq```
 
@@ -178,19 +178,19 @@
 
 - **wc** (word count) đưa ra lần lượt số dòng, số từ, số byte của file
 
-  ![wc](picture\wc.png)
+  ![wc](picture/wc.png)
 
 >Có thể dùng các cờ -l -w -c để lấy ra các trường tương ứng
 
 - **nl** (number lines) đưa ra số dòng của một file
 
-  ![nl](picture\nl.png)
+  ![nl](picture/nl.png)
 
 ### 16. grep
 
 **grep** sử dụng để tìm kiếm một tệp nào đó theo mẫu nhất định hoặc tìm kiếm xem file có chứa chuỗi đó không
 
-  ![grep1](picture\grep1.png)
+  ![grep1](picture/grep1.png)
 
   > cờ -i đánh dấu việc tìm kiếm không phân biệt chữ hoa chữ thường
 
@@ -275,3 +275,9 @@ Bình thường vim sẽ ở chế độ lệnh, tức là không thể sửa v�
 - **u** undo
 
 - **Ctrl+r** redo
+
+## References
+
+<https://linuxjourney.com/lesson/stdout-standard-out-redirect>
+
+<https://linuxjourney.com/lesson/regular-expressions-regex>
