@@ -10,7 +10,7 @@ Shell là nơi để người dùng sử dụng các lệnh để thực hiện 
 >
 >**whoami** trả về tên người dùng
 
-![echo](picture\echo.png)
+![echo](picture/echo.png)
 
 ## 2. Print working directory
 
@@ -18,7 +18,7 @@ Shell là nơi để người dùng sử dụng các lệnh để thực hiện 
 
 - **pwd**: in đường dẫn thư mục hiện tại, dùng để biết bạn đang ở đâu.
 
-![pwd](picture\pwd.png)
+![pwd](picture/pwd.png)
 
 ## 3. Change directory
 
@@ -30,7 +30,7 @@ Shell là nơi để người dùng sử dụng các lệnh để thực hiện 
 
 - **cd**: thay đổi đường dẫn
 
-![cd](picture\cd.png)
+![cd](picture/cd.png)
 
 - Một vài phím tắt với cd
 
@@ -42,7 +42,7 @@ Shell là nơi để người dùng sử dụng các lệnh để thực hiện 
 
   - *cd ~* hoặc *cd* thư mục mặc định hoặc thư mục chính (VD: /home/thu)
 
-  ![cd2](picture\cd2.png)
+  ![cd2](picture/cd2.png)
 
 ## 4. List directory
 
@@ -50,7 +50,7 @@ Shell là nơi để người dùng sử dụng các lệnh để thực hiện 
 
 >ls không hiển thị các tệp bắt đầu bằng .
 
-![ls](picture\ls.png)
+![ls](picture/ls.png)
 
 - Một số cờ với ls:
 
@@ -64,13 +64,13 @@ Shell là nơi để người dùng sử dụng các lệnh để thực hiện 
 
   - -t sắp xếp theo thời gian sửa đối, mới nhất trước.
 
-![ls2](picture\ls2.png)
+![ls2](picture/ls2.png)
 
 ## 5. Touch
 
 **touch**: tạo một tệp mới
 
-![touch](picture\touch.png)
+![touch](picture/touch.png)
 
 >touch có thể làm thay đối dấu thời gian của tệp
 
@@ -78,13 +78,13 @@ Shell là nơi để người dùng sử dụng các lệnh để thực hiện 
 
 **file** dùng để hiển thị mô tả về nội dung của tệp
 
-![file](picture\file.png)
+![file](picture/file.png)
 
 ## 7. Cat
 
 **cat**: dùng để xem nội dung tệp
 
-![cat](picture\cat.png)
+![cat](picture/cat.png)
 
 > có thể xem nhiều tệp cùng lúc bằng cách thêm tên tệp vào sau cat, các tên cách nhau bởi dấu cách.
 
@@ -108,13 +108,13 @@ VD: less hello.txt
 
   - h: bảng hướng dẫn sử dụng trong less
 
-![less](picture\less.png)
+![less](picture/less.png)
 
 ## 9. History
 
 **history** dùng để xem các lệnh đã thực hiện
 
-![history](picture\history.png)
+![history](picture/history.png)
 
 >Có thể dùng nút PageUp trên bàn phím hoặc gõ *!!* để chạy lệnh ngay phía trên
 >
@@ -126,7 +126,7 @@ VD: less hello.txt
 
 - **cp** tạo bản sao của một tệp trong đường dẫn nào đó hoặc copy nội dung từ file này sang file khác
 
-![cp](picture\cp.png)
+![cp](picture/cp.png)
 
 - wildcard
 
@@ -148,7 +148,7 @@ VD: less hello.txt
 
 - **mv** sử dụng để di chuyển tệp hoặc đổi tên chúng
 
-![move](picture\move.png)
+![move](picture/move.png)
 
 - flag
 
@@ -160,7 +160,7 @@ VD: less hello.txt
 
 **mkdir** tạo thư mục mới
 
-![mkdir](picture\mkdir.png)
+![mkdir](picture/mkdir.png)
 
 > có thể tạo nhiều thư mục cùng lúc
 >
@@ -172,7 +172,7 @@ VD: less hello.txt
 
 > lệnh này sẽ xóa thẳng các tệp mà không có một "thùng rác" nào để bạn có thể remove nó. Ngoại trừ các loại tệp write-protected yêu cầu xác nhận trước khi xóa
 
-![rm](picture\rm.png)
+![rm](picture/rm.png)
 
 - flag
 
@@ -188,31 +188,31 @@ VD: less hello.txt
 
 **find**: tìm kiếm tệp hoặc thư mục nào đó tại nơi được chỉ định
 
-![find](picture\find.png)
+![find](picture/find.png)
 
 ## 15. Help
 
 **help** hỗ trợ cách sử dụng với một số lệnh và kiểm tra các flag có sẵn
 
-![help](picture\help.png)
+![help](picture/help.png)
 
 ## 16. Man
 
 **man** hướng dẫn sử dụng một lệnh
 
-![man](picture\man.png)
+![man](picture/man.png)
 
 ## 17. Whatis
 
 **whatis** mô tả ngắn gọn chức năng của một lệnh
 
-![whatis](picture\whatis.png)
+![whatis](picture/whatis.png)
 
 ## 18. Alias
 
 **alias** Sử dụng để gán bí danh cho lệnh khi không muốn gõ đi gõ lại một lệnh dài
 
-![alias](picture\alias.png)
+![alias](picture/alias.png)
 
 >Bí danh sẽ mất khi khởi động lại máy. Muốn tránh điều đó, cần lưu bí danh trong ~/.bashrc
 >
