@@ -162,8 +162,8 @@ Cột STAT biểu thị trạng thái của tiến trình:
 
   - Xem các tiến trình
 
-  ![lsproc](picture/lsproc.pnd)
+  ![lsproc](picture/lsproc.png)
 
   - Xem chi tiết một tiến trình
 
-  ![catproc](picture/catproc.pnd)
+  ![catproc](picture/catproc.png)
